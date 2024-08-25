@@ -16,7 +16,7 @@ class SudokuSolver {
   }
 
   solve(puzzleString) {
-    
+
   }
 }
 
