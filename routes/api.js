@@ -49,6 +49,12 @@ module.exports = function(app) {
       return res.json({error: 'Invalid coordinate'});
     }
 
+    const rowIndex = solver.getRowIndex(row);
+    const colIndex = solver.getColIndex(col);
+    if (puzzle[solver.getCellIndex(rowIndex, colIndex)] === value) {
+      return res.json({valid: true});
+    }
+
     const isRowValid = solver.checkRowPlacement(puzzle, row, col, value);
     const isColValid = solver.checkColPlacement(puzzle, row, col, value);
     const isRegionValid = solver.checkRegionPlacement(puzzle, row, col, value);
