@@ -1,4 +1,4 @@
-const IS_VALID = 'VALID';
+const IS_VALID = process.env.IS_VALID;
 const EMPTY_CELL = '.';
 const CHAR_CODE_OF_A = 'A'.charCodeAt(0);
 

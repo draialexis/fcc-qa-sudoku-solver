@@ -1,5 +1,5 @@
 'use strict';
-
+const IS_VALID = process.env.IS_VALID;
 const SudokuSolver = require('../controllers/sudoku-solver.js');
 
 module.exports = function(app) {

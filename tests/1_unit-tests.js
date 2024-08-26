@@ -19,7 +19,7 @@ suite('Unit Tests', () => {
           '47...8..1' +
           '..16....9' +
           '26914.37.';
-      assert.equal(solver.validate(validPuzzle), 'VALID');
+      assert.equal(solver.validate(validPuzzle), process.env.IS_VALID);
     });
 
     test('Logic handles a puzzle string with invalid characters (not 1-9 or .)', function() {
